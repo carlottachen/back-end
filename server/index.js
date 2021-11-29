@@ -10,7 +10,7 @@ app.get('/api/users', (request, response) => {
 	response.status(200).send(friends);
 });
 
-app.get("/weather/:teamperature", (request, response) => {
+app.get("/weather/:temperature", (request, response) => {
 	const phrase = 
 		`<h3>It was ${request.params.temperature} today</h3>`;
 	response.status(200).send(phrase);
